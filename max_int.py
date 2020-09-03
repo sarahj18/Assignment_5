@@ -9,5 +9,15 @@
 
 num_int = int(input=("Input a number: "))
 max_int = 0
+# if the number is negative in the beginning
+while num_int < 0:
+    num_int = int(input("Input a number: "))
+
+while num_int > 0:
+    if max_int < num_int: # if the new input is larger than 
+        #it beomes the new value
+        max_int = num_int
+    num_int = int(input("Input a number: "))
+
 
 print("The maximum is: ", max_int)
