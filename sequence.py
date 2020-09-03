@@ -14,18 +14,17 @@
 
 n = int(input('Enter the length of the sequence: '))
 
-first = 1
-second = 2
-third = 3
+first = 0
+second = 1
+third = 2
 
 for i in range(0,n):
     if i == 0:
-        print(first)
+        print(second) # print out 1 for first number in sequence
     elif i == 1:
-        print(second)
-    elif i == 2:
-        print(third)
+        print(third) # print out 2 for second number in sequence
     else:
+        #now i calculate next numbers
         next_number = first + second + third
         first = second
         second = third
