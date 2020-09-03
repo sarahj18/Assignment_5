@@ -7,9 +7,10 @@
 # ask for another number
 # If the input is negative we stop and print out the maximum input value
 
-num_int = int(input=("Input a number: "))
+num_int = int(input("Input a number: "))
 max_int = 0
 # if the number is negative in the beginning
+# we ask again until the input is a postive number
 while num_int < 0:
     num_int = int(input("Input a number: "))
 
@@ -18,6 +19,5 @@ while num_int > 0:
         #it beomes the new value
         max_int = num_int
     num_int = int(input("Input a number: "))
-
 
 print("The maximum is: ", max_int)
