@@ -17,3 +17,8 @@ second = 0
 third = 1
 
 n = int(input('Enter the length of the sequence: '))
+
+for i in range(0,n):
+    next_number = first + second + third
+    third = next_number, second = third, first = second
+    print(next_number, end=' ')
